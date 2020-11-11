@@ -10,14 +10,14 @@ Kiến trúc hệ thống cặp bài trùng Prometheus Monitor + Grafana
 
 <div style="text-align:center"><img src="https://i0.wp.com/samirbehara.com/wp-content/uploads/2019/05/prometheus-architecture.png?resize=700%2C389&ssl=1"></div>
 
-# Giải thích thành phần bên kiến trúc
+### Giải thích thành phần bên kiến trúc
 
 - Prometheus Server: trung tâm xử lý dữ liệu
 - Service discovery: Tự động tìm kiếm đối tượng đã được khai báo trong config
 - AlertManager: Quản lý cảnh báo
 - Grafana: Truy vấn dữ liệu từ server prome để hiển thị cho đẹp.
 
-# Giải thích nguyên lý làm việc của Prometheus:
+### Giải thích nguyên lý làm việc của Prometheus:
 
 - Phải cài đặt node_exporter được cài đặt ở trên đối tượng cần monitor 
 - Khai báo thông tin job trong config server Prometheus, để thu thập metrics, prometheus server sẽ tự pull metrics thông qua HTTP
