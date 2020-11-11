@@ -6,3 +6,7 @@ Tối ưu,ngắn gọn, dễ hiểu
 [1. Giới thiệu Prometheus và Grafana](prometheus/gioithieu.md)
 
 [2. Khái niệm trong Prometheus](prometheus/khainiem.md)
+
+[3. Cài đặt](prometheus/caidat.md)
+
+[4. Triển khai thực tế](prometheus/trienkhai.md)
