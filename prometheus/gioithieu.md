@@ -1,8 +1,22 @@
-# Tổng quan về prometheus 
+# Giới thiệu về Promethues
 
-## 1. Prometheus là gì? 
+## 1. Prometheus và Grafana là gì? 
 
-Prometheus là một giải pháp giám sát mã nguồn mở được ban đầu được xây dựng bởi <a href='https://soundcloud.com/'>SoundCloud</a>. Hệ thống giám sát Monitor
+Prometheus là một giải pháp giám sát open source được ban đầu được xây dựng bởi <a href='https://soundcloud.com/'>SoundCloud</a> trang âm nhạc trực tuyến.
+
+Grafana là truy vấn dữ liệu data Prometheus để hiển thị giao diện cho đẹp và dễ nhìn.
+
+Kiến trúc hệ thống cặp bài trùng Prometheus Monitor + Grafana
+
+<div style="text-align:center"><img src="https://i0.wp.com/samirbehara.com/wp-content/uploads/2019/05/prometheus-architecture.png?resize=700%2C389&ssl=1"></div>
+
+Giải thích nguyên lý làm việc của Prometheus:
+- Phải cài đặt node_exporter được cài đặt ở trên đối tượng cần monitor 
+- Khai báo thông tin job trong config server Prometheus, để thu thập metrics, prometheus server sẽ tự pull metrics từ đối tượng về
+- Sau đó thì dữ liệu được đưa xuống database của Prometheus server
+- AlertManager sẽ tiến hành kiểm tra điều kiện rules của quản trị khai báo thì sẽ tự động gửi thông tin alert qua mail qua ứng dụng.
+- Prom UI là giao diện hiển thị metric mà Prometheus thu thập được, nhưng quá cùi bắp và xấu.
+- Hiển thị dữ liệu đẹp hơn bằng Grafana.
 
 ## 2. Tính năng? 
 
