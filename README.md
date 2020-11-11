@@ -1,4 +1,4 @@
-# Prometheus - My notes
+# Prometheus - Hệ thống giám sát chuyên nghiệp
 
 ## Prometheus basic 
 
