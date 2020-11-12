@@ -6,8 +6,13 @@ Mô hình thực tế
 
 Prometheus sẽ giám sát
 1- Phần cứng: Tường lửa Sophos
+
 2- Service: Apache; MySQL
+
 3- Server: OpenVPN Server
+
 4- Container: Docker
+
 5- Prometheus Alert: gửi cảnh báo ra mail hoặc Slack
+
 6- Grafana: Giao diện hiển thị dữ liệu cho Prometheus Server
