@@ -17,6 +17,16 @@ Mô hình thực tế
 
 6- Grafana: Giao diện hiển thị dữ liệu cho Prometheus Server
 
+
+## Cài đặt Golang trước
+
+. Tải theo các bước: 
+{
+    wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz
+
+
+}
+
 ## Node_Exporter cho OpenVPN Server 
 
 . Các bạn download node_exporter ở link này:
